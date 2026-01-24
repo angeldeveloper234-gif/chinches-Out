@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Phone, MessageCircle } from 'lucide-react';
-import { NAV_LINKS, CONTACT_INFO, LOGO_LIGHT, LOGO_DARK } from '../constants';
+import { Menu, X, MessageCircle } from 'lucide-react';
+import { CONTACT_INFO, LOGO_LIGHT, LOGO_DARK } from '../constants';
 import LocationModal from './LocationModal';
 
 const Header: React.FC = () => {
@@ -10,44 +10,50 @@ const Header: React.FC = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 20);
+      setScrolled(window.scrollY > 50);
     };
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const navLinks = [
+    { label: 'Inicio', href: '/' },
+    { label: 'Servicios', href: '/#servicios' },
+    { label: 'Método', href: '/#metodo' },
+    { label: 'Reseñas', href: '/reseñas' },
+    { label: 'Contacto', href: '/#contacto' },
+  ];
+
   return (
     <>
-      <header 
-        className={`fixed top-0 left-0 w-full z-40 transition-all duration-500 ${
-          scrolled ? 'bg-white/95 backdrop-blur-md shadow-sm py-3' : 'bg-transparent py-5 lg:py-6'
-        }`}
+      <header
+        className={`fixed top-0 left-0 w-full z-40 transition-all duration-300 ease-in-out ${scrolled ? 'bg-white shadow-md py-3' : 'bg-[#111111] py-5 lg:py-6'
+          }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center">
             {/* Logo FUMCON */}
-            <div 
-              className="flex-shrink-0 cursor-pointer select-none" 
-              onClick={() => window.location.href = '#hero'}
+            <a
+              href="/"
+              className="flex-shrink-0 cursor-pointer select-none"
             >
-              <img 
-                src={scrolled ? LOGO_LIGHT : LOGO_DARK} 
-                alt="FUMCON Logo" 
+              <img
+                src={scrolled ? LOGO_LIGHT : LOGO_DARK}
+                alt="FUMCON Logo"
                 className="h-10 md:h-12 w-auto object-contain transition-all duration-300"
               />
-            </div>
+            </a>
 
             {/* Desktop Nav */}
-            <nav className="hidden md:flex space-x-1 items-center bg-white/5 backdrop-blur-sm px-2 py-1.5 rounded-full border border-white/10 mx-4">
-              {NAV_LINKS.map((link) => (
+            <nav className={`hidden md:flex space-x-1 items-center px-2 py-1.5 rounded-full mx-4 transition-all duration-300 ${scrolled ? '' : 'bg-white/5 border border-white/10 backdrop-blur-sm'}`}>
+              {navLinks.map((link) => (
                 <a
                   key={link.label}
                   href={link.href}
-                  className={`text-sm font-medium px-4 py-2 rounded-full transition-all duration-300 ${
-                    scrolled 
-                      ? 'text-gray-600 hover:text-brand-dark hover:bg-gray-100' 
-                      : 'text-white/90 hover:text-white hover:bg-white/10'
-                  }`}
+                  className={`text-sm font-medium px-4 py-2 rounded-full transition-all duration-300 ${scrolled
+                    ? 'text-gray-800 hover:text-brand-green hover:bg-gray-50'
+                    : 'text-white/90 hover:text-white hover:bg-white/10'
+                    }`}
                 >
                   {link.label}
                 </a>
@@ -58,11 +64,10 @@ const Header: React.FC = () => {
             <div className="hidden md:flex">
               <button
                 onClick={() => setIsModalOpen(true)}
-                className={`px-6 py-2.5 rounded-full font-bold transition-all transform hover:scale-105 flex items-center gap-2 text-sm shadow-lg ${
-                  scrolled 
-                    ? 'bg-brand-dark text-white hover:bg-brand-green' 
-                    : 'bg-brand-yellow text-brand-dark hover:bg-white'
-                }`}
+                className={`px-6 py-2.5 rounded-full font-bold transition-all transform hover:scale-105 flex items-center gap-2 text-sm shadow-lg ${scrolled
+                  ? 'bg-brand-dark text-white hover:bg-brand-green'
+                  : 'bg-brand-yellow text-brand-dark hover:bg-white'
+                  }`}
               >
                 <MessageCircle size={18} />
                 Sucursales WhatsApp
@@ -85,7 +90,7 @@ const Header: React.FC = () => {
         {isOpen && (
           <div className="md:hidden bg-white absolute w-full shadow-2xl rounded-b-3xl overflow-hidden animate-in slide-in-from-top-10 fade-in duration-300">
             <div className="px-4 pt-4 pb-6 space-y-2">
-              {NAV_LINKS.map((link) => (
+              {navLinks.map((link) => (
                 <a
                   key={link.label}
                   href={link.href}

@@ -11,7 +11,7 @@ export const COLORS = {
 export const CONTACT_INFO = {
   phone: "+52 999 123 4567",
   whatsapp: "+52 999 123 4567",
-  email: "fumcon@outlook.com",
+  email: "Fumcondelsureste@gmail.com",
   schedule: "24/7"
 };
 
@@ -172,12 +172,12 @@ export const TESTIMONIALS: Testimonial[] = [
 ];
 
 export const COVERAGE_AREAS = [
-  "Mérida", 
-  "Cancún", 
-  "Playa del Carmen", 
-  "Tulum", 
-  "Chetumal", 
-  "Bacalar", 
-  "José María Morelos", 
+  "Mérida",
+  "Cancún",
+  "Playa del Carmen",
+  "Tulum",
+  "Chetumal",
+  "Bacalar",
+  "José María Morelos",
   "Felipe Carrillo Puerto"
 ];
