@@ -42,7 +42,7 @@ export const BRANCHES = [
   {
     id: 'chetumal',
     name: "Chetumal",
-    phone: "9831003580"
+    phone: "9831777310"
   },
   {
     id: 'bacalar',
