@@ -2,7 +2,7 @@ import { Bug, SprayCan, ShieldCheck, MapPin, Phone, Mail, Clock, Rat, Home, Wind
 import { ServiceItem, Testimonial, NavLink, MethodItem } from './types';
 
 export const COLORS = {
-  primary: '#2D8C3C',
+  primary: '#19D42B',
   secondary: '#FBC02D',
   text: '#212121',
   white: '#FFFFFF'
@@ -15,8 +15,8 @@ export const CONTACT_INFO = {
   schedule: "24/7"
 };
 
-export const LOGO_LIGHT = "https://nmnofwinjufyyykyaelc.supabase.co/storage/v1/object/sign/Fumcon/logo-afinity.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9hNzRlMzZmMy0wZDFhLTQ5NWMtYWMwMS0zNjMzMDY0Y2YwZTIiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJGdW1jb24vbG9nby1hZmluaXR5LnBuZyIsImlhdCI6MTc2OTIwNjMwMCwiZXhwIjoxODAwNzQyMzAwfQ.X39SzxgwHORtyk1eShbaZ5SN8zRv4o6WvJBU6GCWfhA";
-export const LOGO_DARK = "https://nmnofwinjufyyykyaelc.supabase.co/storage/v1/object/sign/Fumcon/logo-white.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9hNzRlMzZmMy0wZDFhLTQ5NWMtYWMwMS0zNjMzMDY0Y2YwZTIiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJGdW1jb24vbG9nby13aGl0ZS5wbmciLCJpYXQiOjE3NjkyMDYyODAsImV4cCI6MTgwMDc0MjI4MH0.gX7kJVpwC5jfnuytiXoF2vl_cY8CI-XhJL049E6PA-Y";
+export const LOGO_LIGHT = "/fumcon-logo.png";
+export const LOGO_DARK = "/fumcon-logo.png";
 
 export const BRANCHES = [
   {

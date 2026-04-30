@@ -1,22 +1,22 @@
 import React from 'react';
-import { NAV_LINKS, LOGO_DARK } from '../constants';
+import { NAV_LINKS, LOGO_LIGHT } from '../constants';
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-brand-dark text-white pt-20 pb-10 border-t border-white/5">
+    <footer className="bg-white text-brand-dark pt-20 pb-10 border-t border-gray-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col md:flex-row justify-between items-start md:items-center border-b border-gray-800 pb-12 mb-12">
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-center border-b border-gray-100 pb-12 mb-12">
 
           {/* Logo FUMCON */}
           <a href="/" className="flex flex-col items-start mb-8 md:mb-0 select-none cursor-pointer">
             <img
-              src={LOGO_DARK}
+              src={LOGO_LIGHT}
               alt="FUMCON Logo"
               className="h-12 md:h-14 w-auto mb-4 object-contain"
             />
           </a>
 
-          <div className="flex flex-wrap gap-x-8 gap-y-4 text-sm font-medium text-gray-400">
+          <div className="flex flex-wrap gap-x-8 gap-y-4 text-sm font-medium text-gray-500">
             {[
               { label: 'Inicio', href: '/' },
               { label: 'Servicios', href: '/#servicios' },
@@ -27,7 +27,7 @@ const Footer: React.FC = () => {
               <a
                 key={link.label}
                 href={link.href}
-                className="hover:text-brand-yellow transition-colors"
+                className="hover:text-brand-green transition-colors"
               >
                 {link.label}
               </a>
@@ -35,7 +35,7 @@ const Footer: React.FC = () => {
           </div>
         </div>
 
-        <div className="flex flex-col md:flex-row justify-between items-center text-xs text-gray-500 font-medium">
+        <div className="flex flex-col md:flex-row justify-between items-center text-xs text-gray-400 font-medium">
           <p>&copy; {new Date().getFullYear()} FUMCON del Sureste S.A. de C.V. Todos los derechos reservados.</p>
         </div>
       </div>

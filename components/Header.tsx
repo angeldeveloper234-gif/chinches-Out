@@ -27,7 +27,7 @@ const Header: React.FC = () => {
   return (
     <>
       <header
-        className={`fixed top-0 left-0 w-full z-40 transition-all duration-300 ease-in-out ${scrolled ? 'bg-white shadow-md py-3' : 'bg-[#111111] py-5 lg:py-6'
+        className={`fixed top-0 left-0 w-full z-40 transition-all duration-300 ease-in-out ${scrolled ? 'bg-white shadow-md py-3' : 'bg-white py-5 lg:py-6'
           }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -38,21 +38,21 @@ const Header: React.FC = () => {
               className="flex-shrink-0 cursor-pointer select-none"
             >
               <img
-                src={scrolled ? LOGO_LIGHT : LOGO_DARK}
+                src={LOGO_LIGHT}
                 alt="FUMCON Logo"
                 className="h-10 md:h-12 w-auto object-contain transition-all duration-300"
               />
             </a>
 
             {/* Desktop Nav */}
-            <nav className={`hidden md:flex space-x-1 items-center px-2 py-1.5 rounded-full mx-4 transition-all duration-300 ${scrolled ? '' : 'bg-white/5 border border-white/10 backdrop-blur-sm'}`}>
+            <nav className={`hidden md:flex space-x-1 items-center px-2 py-1.5 rounded-full mx-4 transition-all duration-300 ${scrolled ? '' : 'bg-gray-50 border border-gray-100'}`}>
               {navLinks.map((link) => (
                 <a
                   key={link.label}
                   href={link.href}
                   className={`text-sm font-medium px-4 py-2 rounded-full transition-all duration-300 ${scrolled
                     ? 'text-gray-800 hover:text-brand-green hover:bg-gray-50'
-                    : 'text-white/90 hover:text-white hover:bg-white/10'
+                    : 'text-gray-700 hover:text-brand-green hover:bg-gray-100'
                     }`}
                 >
                   {link.label}
@@ -66,7 +66,7 @@ const Header: React.FC = () => {
                 onClick={() => setIsModalOpen(true)}
                 className={`px-6 py-2.5 rounded-full font-bold transition-all transform hover:scale-105 flex items-center gap-2 text-sm shadow-lg ${scrolled
                   ? 'bg-brand-dark text-white hover:bg-brand-green'
-                  : 'bg-brand-yellow text-brand-dark hover:bg-white'
+                  : 'bg-brand-dark text-white hover:bg-brand-green'
                   }`}
               >
                 <MessageCircle size={18} />
@@ -78,7 +78,7 @@ const Header: React.FC = () => {
             <div className="md:hidden">
               <button
                 onClick={() => setIsOpen(!isOpen)}
-                className={`p-2 rounded-lg transition-colors ${scrolled ? 'text-brand-dark' : 'text-white'}`}
+                className="p-2 rounded-lg transition-colors text-brand-dark"
               >
                 {isOpen ? <X size={28} /> : <Menu size={28} />}
               </button>

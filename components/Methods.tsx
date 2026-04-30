@@ -10,7 +10,7 @@ const Methods: React.FC = () => {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="mb-20 border-b border-white/10 pb-8">
-          <span className="text-brand-yellow font-bold tracking-widest uppercase text-xs mb-3 block">Metodología Avanzada</span>
+          <span className="text-brand-green font-bold tracking-widest uppercase text-xs mb-3 block">Metodología Avanzada</span>
           <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-6">
             <h2 className="text-4xl lg:text-5xl font-bold tracking-tight">
                 Ciencia Aplicada <br/> a la Seguridad
@@ -27,7 +27,7 @@ const Methods: React.FC = () => {
             <div key={index} className="group w-full md:w-[calc(50%-2rem)] lg:w-[calc(30%)]">
               <div className="border-l-2 border-white/20 pl-6 py-2 group-hover:border-brand-green transition-colors duration-500 h-full flex flex-col">
                 <div className="mb-6 opacity-50 group-hover:opacity-100 transition-opacity">
-                   <method.icon size={32} className="text-brand-green group-hover:text-brand-yellow transition-colors" />
+                   <method.icon size={32} className="text-brand-green group-hover:text-brand-green/80 transition-colors" />
                 </div>
                 <h3 className="text-2xl font-bold mb-3 group-hover:translate-x-2 transition-transform duration-300">{method.title}</h3>
                 <p className="text-gray-400 leading-relaxed text-sm group-hover:text-gray-200 transition-colors">
