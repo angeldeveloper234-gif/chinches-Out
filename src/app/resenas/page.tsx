@@ -1,13 +1,15 @@
+"use client";
+
 import React, { useState } from 'react';
 import { Star, Send } from 'lucide-react';
 import InfiniteReviewsTicker from '../../components/InfiniteReviewsTicker';
 
-const Reviews: React.FC = () => {
+export default function ReviewsPage() {
     const [rating, setRating] = useState<number>(0);
     const [hoveredRating, setHoveredRating] = useState<number>(0);
     const [formSubmitted, setFormSubmitted] = useState(false);
 
-    const googleMapsLink = "https://www.google.com/maps/place/Fumcon+del+sureste/@20.9989929,-89.6501838,14z/data=!4m9!1m2!2m1!1sFumcon+del+sureste!3m5!1s0x8f567549e896c5e5:0x4d654bc3a2339ffe!8m2!3d20.9989929!4d-89.6501838!16s%2Fg%2F11xdfx2yvd?entry=ttu";
+    const googleMapsLink = "https://www.google.com/maps/place/ChinchesOut+del+sureste/@20.9989929,-89.6501838,14z/data=!4m9!1m2!2m1!1sChinchesOut+del+sureste!3m5!1s0x8f567549e896c5e5:0x4d654bc3a2339ffe!8m2!3d20.9989929!4d-89.6501838!16s%2Fg%2F11xdfx2yvd?entry=ttu";
 
     const handleStarClick = (selectedRating: number) => {
         setRating(selectedRating);
@@ -31,7 +33,7 @@ const Reviews: React.FC = () => {
             `Mensaje: ${message}`
         );
 
-        window.location.href = `mailto:Fumcondelsureste@gmail.com?subject=${subject}&body=${body}`;
+        window.location.href = `mailto:ChinchesOutdelsureste@gmail.com?subject=${subject}&body=${body}`;
 
         setFormSubmitted(true);
     };
@@ -117,6 +119,4 @@ const Reviews: React.FC = () => {
             </div>
         </div>
     );
-};
-
-export default Reviews;
+}

@@ -1,7 +1,8 @@
+"use client";
 import React, { useEffect, useState } from 'react';
 import { X, MapPin, MessageCircle, ChevronRight } from 'lucide-react';
 import { BRANCHES } from '../constants';
-import { supabase } from '../src/lib/supabase';
+import { supabase } from '../lib/supabase';
 
 interface LocationModalProps {
   isOpen: boolean;
@@ -105,7 +106,7 @@ const LocationModal: React.FC<LocationModalProps> = ({ isOpen, onClose }) => {
 
         {/* Footer */}
         <div className="bg-gray-50 px-6 py-3 text-center border-t border-gray-100 shrink-0">
-          <p className="text-[10px] text-gray-400 font-medium tracking-wide uppercase">FUMCON del Sureste S.A. de C.V.</p>
+          <p className="text-[10px] text-gray-400 font-medium tracking-wide uppercase">ChinchesOut del Sureste S.A. de C.V.</p>
         </div>
       </div>
     </div>

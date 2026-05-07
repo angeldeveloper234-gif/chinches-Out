@@ -1,3 +1,4 @@
+"use client";
 import React, { useState } from 'react';
 import { Phone, Mail, Clock, Send, MapPin, ArrowRight } from 'lucide-react';
 import { CONTACT_INFO } from '../constants';
@@ -58,7 +59,7 @@ const Contact: React.FC = () => {
             {/* Info Column */}
             <div className="lg:col-span-5 space-y-12">
                 <div>
-                    <h2 className="text-4xl lg:text-5xl font-bold text-brand-dark mb-6 tracking-tight">Hablemos</h2>
+                    <h2 className="text-3xl lg:text-5xl font-bold text-brand-dark mb-6 tracking-tight">Hablemos</h2>
                     <p className="text-xl text-gray-500 font-light leading-relaxed">
                         ¿Problemas de plagas? La solución empieza con un mensaje. Atención prioritaria las 24 horas.
                     </p>

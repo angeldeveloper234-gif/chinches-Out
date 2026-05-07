@@ -1,3 +1,4 @@
+"use client";
 import React from 'react';
 import { PESTS_LIST } from '../constants';
 import { ArrowRight } from 'lucide-react';

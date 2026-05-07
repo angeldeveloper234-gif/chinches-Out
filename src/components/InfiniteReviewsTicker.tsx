@@ -1,6 +1,7 @@
+"use client";
 import React from 'react';
 import { Star } from 'lucide-react';
-import { GOOGLE_REVIEWS_MOCK } from '../src/data/googleReviewsMock';
+import { GOOGLE_REVIEWS_MOCK } from '../data/googleReviewsMock';
 
 const GoogleIcon = ({ className }: { className?: string }) => (
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" className={className} fill="currentColor">

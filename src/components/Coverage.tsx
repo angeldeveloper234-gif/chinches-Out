@@ -1,3 +1,4 @@
+"use client";
 import React from 'react';
 import { MapPin } from 'lucide-react';
 import { COVERAGE_AREAS } from '../constants';
@@ -31,7 +32,7 @@ const Coverage: React.FC = () => {
 
                         <div className="relative h-96 lg:h-auto bg-gray-800">
                             <img
-                                src="https://nmnofwinjufyyykyaelc.supabase.co/storage/v1/object/sign/Fumcon/mapa-operaciones-fumcon.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9hNzRlMzZmMy0wZDFhLTQ5NWMtYWMwMS0zNjMzMDY0Y2YwZTIiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJGdW1jb24vbWFwYS1vcGVyYWNpb25lcy1mdW1jb24ucG5nIiwiaWF0IjoxNzY5Mjg2Njk5LCJleHAiOjE4MDA4MjI2OTl9.7AHDRuGYSZCJ1PblNT8bmd7Gn2Qk4fZ5UtXRJqEHMhk"
+                                src="https://nmnofwinjufyyykyaelc.supabase.co/storage/v1/object/sign/Chinches Out/mapa-operaciones-Chinches Out.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9hNzRlMzZmMy0wZDFhLTQ5NWMtYWMwMS0zNjMzMDY0Y2YwZTIiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJGdW1jb24vbWFwYS1vcGVyYWNpb25lcy1mdW1jb24ucG5nIiwiaWF0IjoxNzY5Mjg2Njk5LCJleHAiOjE4MDA4MjI2OTl9.7AHDRuGYSZCJ1PblNT8bmd7Gn2Qk4fZ5UtXRJqEHMhk"
                                 alt="Mapa de cobertura en Quintana Roo y Yucatán"
                                 className="w-full h-full object-cover object-center"
                             />

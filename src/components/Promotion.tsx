@@ -1,3 +1,4 @@
+"use client";
 import React, { useState } from 'react';
 import { Tag, ArrowRight } from 'lucide-react';
 import LocationModal from './LocationModal';
@@ -19,9 +20,9 @@ const Promotion: React.FC = () => {
                         <Tag size={14} className="text-brand-yellow" />
                         Oferta Limitada
                     </div>
-                    <h2 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-none">
+                    <h2 className="text-3xl md:text-6xl font-bold text-white mb-6 leading-none">
                         3 Sesiones <br/>
-                        <span className="text-white/50 text-2xl md:text-4xl align-middle font-medium">al precio de</span> 2
+                        <span className="text-white/50 text-xl md:text-4xl align-middle font-medium">al precio de</span> 2
                     </h2>
                     <p className="text-green-50 text-lg md:text-xl max-w-lg leading-relaxed">
                         Protección extendida para tu hogar. Incluye inspección inicial sin costo y garantía de servicio.

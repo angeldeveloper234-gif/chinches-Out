@@ -1,0 +1,47 @@
+@import "tailwindcss";
+@config "../../tailwind.config.js";
+
+@layer utilities {
+  .animate-scroll {
+    animation: scroll 80s linear infinite;
+  }
+  .animate-scroll:hover {
+    animation-play-state: paused;
+  }
+  .animate-shimmer {
+    animation: shimmer 2s infinite linear;
+    background: linear-gradient(to right, transparent 0%, rgba(255,255,255,0.4) 50%, transparent 100%);
+    background-size: 200% 100%;
+  }
+  .animate-pulse-slow {
+    animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+  .shadow-glow {
+    box-shadow: 0 0 20px rgba(25, 212, 43, 0.4);
+  }
+}
+
+@keyframes shimmer {
+  from { background-position: -200% 0; }
+  to { background-position: 200% 0; }
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* Custom scrollbar for a premium feel */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #19D42B;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #11941E;
+}

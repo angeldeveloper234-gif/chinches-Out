@@ -1,12 +1,14 @@
+"use client";
+import Link from 'next/link';
 import React, { useState, useEffect } from 'react';
 import { Menu, X, MessageCircle } from 'lucide-react';
-import { CONTACT_INFO, LOGO_LIGHT, LOGO_DARK } from '../constants';
-import LocationModal from './LocationModal';
+import { CONTACT_INFO } from '../constants';
+
 
 const Header: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const [isModalOpen, setIsModalOpen] = useState(false);
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -19,7 +21,8 @@ const Header: React.FC = () => {
   const navLinks = [
     { label: 'Inicio', href: '/' },
     { label: 'Servicios', href: '/#servicios' },
-    { label: 'Método', href: '/#metodo' },
+    { label: 'Método', href: '/#metodos' },
+    { label: 'Tienda', href: '/#tienda' },
     { label: 'Reseñas', href: '/reseñas' },
     { label: 'Contacto', href: '/#contacto' },
   ];
@@ -32,22 +35,25 @@ const Header: React.FC = () => {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center">
-            {/* Logo FUMCON */}
-            <a
+            {/* Logo ChinchesOut */}
+            <Link
               href="/"
-              className="flex-shrink-0 cursor-pointer select-none"
+              className="flex items-center gap-2 group select-none"
             >
-              <img
-                src={LOGO_LIGHT}
-                alt="FUMCON Logo"
-                className="h-10 md:h-12 w-auto object-contain transition-all duration-300"
-              />
-            </a>
+              <div className="flex items-center">
+                <span className="text-2xl md:text-3xl font-black tracking-tighter text-brand-dark">
+                  CHINCHES
+                </span>
+                <span className="text-2xl md:text-3xl font-black tracking-tighter text-brand-green ml-1">
+                  OUT
+                </span>
+              </div>
+            </Link>
 
             {/* Desktop Nav */}
             <nav className={`hidden md:flex space-x-1 items-center px-2 py-1.5 rounded-full mx-4 transition-all duration-300 ${scrolled ? '' : 'bg-gray-50 border border-gray-100'}`}>
               {navLinks.map((link) => (
-                <a
+                <Link
                   key={link.label}
                   href={link.href}
                   className={`text-sm font-medium px-4 py-2 rounded-full transition-all duration-300 ${scrolled
@@ -56,23 +62,12 @@ const Header: React.FC = () => {
                     }`}
                 >
                   {link.label}
-                </a>
+                </Link>
               ))}
             </nav>
 
             {/* CTA Button Desktop */}
-            <div className="hidden md:flex">
-              <button
-                onClick={() => setIsModalOpen(true)}
-                className={`px-6 py-2.5 rounded-full font-bold transition-all transform hover:scale-105 flex items-center gap-2 text-sm shadow-lg ${scrolled
-                  ? 'bg-brand-dark text-white hover:bg-brand-green'
-                  : 'bg-brand-dark text-white hover:bg-brand-green'
-                  }`}
-              >
-                <MessageCircle size={18} />
-                Sucursales WhatsApp
-              </button>
-            </div>
+
 
             {/* Mobile menu button */}
             <div className="md:hidden">
@@ -91,30 +86,22 @@ const Header: React.FC = () => {
           <div className="md:hidden bg-white absolute w-full shadow-2xl rounded-b-3xl overflow-hidden animate-in slide-in-from-top-10 fade-in duration-300">
             <div className="px-4 pt-4 pb-6 space-y-2">
               {navLinks.map((link) => (
-                <a
+                <Link
                   key={link.label}
                   href={link.href}
                   className="block px-4 py-3 rounded-xl text-base font-medium text-gray-700 hover:text-brand-green hover:bg-green-50 transition-colors"
                   onClick={() => setIsOpen(false)}
                 >
                   {link.label}
-                </a>
+                </Link>
               ))}
-              <button
-                onClick={() => {
-                  setIsOpen(false);
-                  setIsModalOpen(true);
-                }}
-                className="block w-full text-center mt-4 bg-brand-green text-white px-4 py-4 rounded-xl font-bold"
-              >
-                Sucursales WhatsApp
-              </button>
+
             </div>
           </div>
         )}
       </header>
 
-      <LocationModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
+
     </>
   );
 };
