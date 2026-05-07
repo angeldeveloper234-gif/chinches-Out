@@ -9,7 +9,7 @@ const Promotion: React.FC = () => {
   return (
     <section id="promociones" className="py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
-        <div className="bg-gradient-to-br from-brand-green to-brand-darkGreen rounded-[3rem] p-8 md:p-16 relative overflow-hidden shadow-2xl">
+        <div className="bg-gradient-to-br from-brand-green to-brand-darkGreen rounded-[3rem] p-6 md:p-16 relative overflow-hidden shadow-2xl">
             
             {/* Background Texture */}
             <div className="absolute top-0 right-0 w-full h-full opacity-20 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]"></div>
@@ -21,8 +21,8 @@ const Promotion: React.FC = () => {
                         Oferta Limitada
                     </div>
                     <h2 className="text-3xl md:text-6xl font-bold text-white mb-6 leading-none">
-                        3 Sesiones <br/>
-                        <span className="text-white/50 text-xl md:text-4xl align-middle font-medium">al precio de</span> 2
+                        3 Sesiones <br className="hidden md:block" />
+                        <span className="text-white/50 text-lg md:text-4xl align-middle font-medium">al precio de</span> 2
                     </h2>
                     <p className="text-green-50 text-lg md:text-xl max-w-lg leading-relaxed">
                         Protección extendida para tu hogar. Incluye inspección inicial sin costo y garantía de servicio.
@@ -30,7 +30,7 @@ const Promotion: React.FC = () => {
                 </div>
 
                 <div className="lg:w-2/5 flex flex-col items-center">
-                    <div className="bg-white p-8 rounded-3xl shadow-xl w-full max-w-sm transform hover:scale-105 transition-transform duration-300">
+                    <div className="bg-white p-6 md:p-8 rounded-3xl shadow-xl w-full max-w-sm transform hover:scale-105 transition-transform duration-300">
                         <p className="text-gray-400 text-sm font-bold uppercase tracking-wider text-center mb-2">Servicios Desde</p>
                         <div className="flex justify-center items-baseline mb-6">
                             <span className="text-5xl font-extrabold text-brand-dark">$750</span>

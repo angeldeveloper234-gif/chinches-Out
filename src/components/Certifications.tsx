@@ -38,7 +38,7 @@ const Certifications: React.FC = () => {
           <motion.h2 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            className="text-3xl md:text-5xl font-black text-brand-dark mb-6"
+            className="text-3xl md:text-5xl font-black text-brand-dark mb-4 md:mb-6"
           >
             Sello de <span className="text-brand-green">Confianza</span> Profesional
           </motion.h2>
@@ -72,7 +72,7 @@ const Certifications: React.FC = () => {
           <motion.div 
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
-            className="bg-brand-dark rounded-[2.5rem] md:rounded-[3rem] p-8 md:p-16 flex flex-col lg:flex-row items-center justify-between gap-12 overflow-hidden relative"
+            className="bg-brand-dark rounded-[2.5rem] md:rounded-[3rem] p-6 md:p-16 flex flex-col lg:flex-row items-center justify-between gap-8 md:gap-12 overflow-hidden relative"
           >
             {/* Decorative background for the CTA box */}
             <div className="absolute inset-0 opacity-10 pointer-events-none">
@@ -81,9 +81,9 @@ const Certifications: React.FC = () => {
             </div>
 
             <div className="text-center lg:text-left relative z-10">
-              <h3 className="text-2xl md:text-4xl font-black text-white mb-4">
+              <h3 className="text-xl md:text-4xl font-black text-white mb-4">
                 ¿Plaga persistente? <br />
-                <span className="text-brand-yellow text-xl md:text-4xl">La eliminamos hoy mismo.</span>
+                <span className="text-brand-yellow text-lg md:text-4xl">La eliminamos hoy mismo.</span>
               </h3>
               <p className="text-gray-400 font-medium max-w-xl">
                 Nuestro protocolo avanzado garantiza la eliminación total desde la primera aplicación.

@@ -88,7 +88,7 @@ const StoreSection = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 }}
-            className="text-4xl md:text-6xl font-black text-brand-dark mb-6 leading-tight"
+            className="text-3xl md:text-6xl font-black text-brand-dark mb-6 leading-tight"
           >
             Equípate contra las <span className="text-brand-green">Plagas</span>
           </motion.h2>
@@ -104,7 +104,7 @@ const StoreSection = () => {
             <button
               key={cat}
               onClick={() => setActiveCategory(cat)}
-              className={`relative px-6 md:px-8 py-2.5 md:py-3 rounded-2xl font-black transition-all overflow-hidden text-sm md:text-base ${
+              className={`relative px-4 md:px-8 py-2 md:py-3 rounded-2xl font-black transition-all overflow-hidden text-xs md:text-base ${
                 activeCategory === cat 
                   ? 'text-white' 
                   : 'text-brand-dark bg-brand-gray/50 hover:bg-brand-gray'
@@ -261,22 +261,22 @@ const StoreSection = () => {
               animate={{ x: 0 }}
               exit={{ x: '100%' }}
               transition={{ type: 'spring', damping: 25, stiffness: 200 }}
-              className="fixed right-0 top-0 bottom-0 w-full max-w-md bg-white z-[60] shadow-2xl flex flex-col"
+              className="fixed right-0 top-0 bottom-0 w-full md:max-w-md bg-white z-[60] shadow-2xl flex flex-col"
             >
-              <div className="p-6 md:p-8 border-b border-brand-gray flex items-center justify-between">
+              <div className="p-4 md:p-8 border-b border-brand-gray flex items-center justify-between">
                 <div>
-                  <h3 className="text-xl md:text-2xl font-black text-brand-dark">Tu Carrito</h3>
-                  <p className="text-sm text-gray-500 font-bold uppercase tracking-wider">{cartCount} productos</p>
+                  <h3 className="text-lg md:text-2xl font-black text-brand-dark">Tu Carrito</h3>
+                  <p className="text-[10px] md:text-sm text-gray-500 font-bold uppercase tracking-wider">{cartCount} productos</p>
                 </div>
                 <button 
                   onClick={() => setIsCartOpen(false)}
-                  className="p-2 md:p-3 bg-brand-gray/50 hover:bg-brand-gray rounded-xl transition-colors"
+                  className="p-1.5 md:p-3 bg-brand-gray/50 hover:bg-brand-gray rounded-xl transition-colors"
                 >
-                  <X size={20} className="md:w-6 md:h-6 text-brand-dark" />
+                  <X size={18} className="md:w-6 md:h-6 text-brand-dark" />
                 </button>
               </div>
 
-              <div className="flex-1 overflow-y-auto p-6 md:p-8 space-y-6">
+              <div className="flex-1 overflow-y-auto p-4 md:p-8 space-y-4 md:space-y-6">
                 {cart.length === 0 ? (
                   <div className="h-full flex flex-col items-center justify-center text-center">
                     <div className="w-24 h-24 bg-brand-gray/50 rounded-full flex items-center justify-center mb-6">
@@ -341,7 +341,7 @@ const StoreSection = () => {
                 )}
               </div>
 
-              <div className="p-6 md:p-8 bg-brand-gray/30 border-t border-brand-gray">
+              <div className="p-4 md:p-8 bg-brand-gray/30 border-t border-brand-gray">
                 <div className="flex justify-between items-center mb-6">
                   <span className="text-xs md:text-sm text-gray-500 font-black uppercase tracking-widest">Total Estimado</span>
                   <span className="text-2xl md:text-3xl font-black text-brand-dark">${cartTotal} <span className="text-sm">MXN</span></span>

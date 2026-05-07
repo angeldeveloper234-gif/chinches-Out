@@ -5,13 +5,13 @@ import { ArrowRight } from 'lucide-react';
 
 const Services: React.FC = () => {
   return (
-    <section id="servicios" className="py-24 bg-white relative">
+    <section id="servicios" className="py-16 md:py-24 bg-white relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-6">
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 md:mb-16 gap-6">
           <div className="max-w-2xl">
             <span className="text-brand-green font-bold tracking-widest uppercase text-xs mb-2 block">Nuestros Servicios</span>
-            <h2 className="text-4xl lg:text-5xl font-bold text-brand-dark tracking-tight">
-              Control Especializado <br /> de Plagas
+            <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-brand-dark tracking-tight">
+              Control Especializado <br className="hidden md:block" /> de Plagas
             </h2>
           </div>
           <p className="text-gray-500 max-w-sm text-left mb-2">

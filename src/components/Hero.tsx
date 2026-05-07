@@ -47,9 +47,9 @@ const Hero: React.FC = () => {
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.2 }}
-              className="text-[2.75rem] xs:text-5xl lg:text-8xl font-black leading-[0.95] tracking-tighter"
+              className="text-4xl md:text-6xl lg:text-8xl font-black leading-[1.1] md:leading-[0.95] tracking-tighter"
             >
-              Control de Plagas <br />
+              Control de Plagas <br className="hidden lg:block" />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-green to-brand-yellow drop-shadow-sm">
                 Sin Riesgos
               </span>

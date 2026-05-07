@@ -87,7 +87,7 @@ const Testimonials: React.FC = () => {
                 </div>
               </div>
               
-              <p className="text-lg md:text-3xl font-medium text-gray-200 mb-10 italic leading-relaxed">
+              <p className="text-base md:text-3xl font-medium text-gray-200 mb-6 md:mb-10 italic leading-relaxed">
                 "{REVIEWS[index].content}"
               </p>
               
