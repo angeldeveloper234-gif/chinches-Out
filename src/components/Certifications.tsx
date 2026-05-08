@@ -68,37 +68,6 @@ const Certifications: React.FC = () => {
           ))}
         </div>
 
-        <div className="mt-20 relative">
-          <motion.div 
-            initial={{ opacity: 0, scale: 0.95 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            className="bg-brand-dark rounded-[2.5rem] md:rounded-[3rem] p-6 md:p-16 flex flex-col lg:flex-row items-center justify-between gap-8 md:gap-12 overflow-hidden relative"
-          >
-            {/* Decorative background for the CTA box */}
-            <div className="absolute inset-0 opacity-10 pointer-events-none">
-              <div className="absolute top-0 right-0 w-64 h-64 bg-brand-green rounded-full blur-[100px]"></div>
-              <div className="absolute bottom-0 left-0 w-64 h-64 bg-brand-yellow rounded-full blur-[100px]"></div>
-            </div>
-
-            <div className="text-center lg:text-left relative z-10">
-              <h3 className="text-xl md:text-4xl font-black text-white mb-4">
-                ¿Plaga persistente? <br />
-                <span className="text-brand-yellow text-lg md:text-4xl">La eliminamos hoy mismo.</span>
-              </h3>
-              <p className="text-gray-400 font-medium max-w-xl">
-                Nuestro protocolo avanzado garantiza la eliminación total desde la primera aplicación.
-              </p>
-            </div>
-            
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="bg-brand-green text-white px-10 py-5 rounded-full font-black text-lg shadow-2xl shadow-brand-green/20 relative z-10"
-            >
-              Consultar Garantía
-            </motion.button>
-          </motion.div>
-        </div>
       </div>
     </section>
   );

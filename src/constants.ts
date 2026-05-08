@@ -63,13 +63,8 @@ export const BRANCHES = [
 
 export const NAV_LINKS: NavLink[] = [
   { label: 'Inicio', href: '#hero' },
-  { label: 'Servicios', href: '#servicios' },
-  { label: 'Métodos', href: '#metodos' },
+  { label: 'Plagas', href: '#servicios' },
   { label: 'Tienda', href: '#tienda' },
-  { label: 'Promociones', href: '#promociones' },
-  { label: 'Opiniones', href: '#testimonios' },
-  { label: 'Cobertura', href: '#cobertura' },
-  { label: 'Contacto', href: '#contacto' },
 ];
 
 export const PRODUCTS: Product[] = [
@@ -168,55 +163,55 @@ export const PRODUCTS: Product[] = [
 export const PESTS_LIST = [
   {
     name: "Chinches",
-    description: "Especialistas en erradicación de chinches de cama.",
+    description: "Productos especializados para la erradicación total de chinches.",
     icon: Bug,
     image: "https://nmnofwinjufyyykyaelc.supabase.co/storage/v1/object/sign/Fumcon/cucaracha.jpg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9hNzRlMzZmMy0wZDFhLTQ5NWMtYWMwMS0zNjMzMDY0Y2YwZTIiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJGdW1jb24vY3VjYXJhY2hhLmpwZyIsImlhdCI6MTc2OTIwMDY5OCwiZXhwIjoxODAwNzM2Njk4fQ.vrba2_grNgq86ULycxqxYFtCOy44l4oSj8gzEt6nHbE"
   },
   {
     name: "Cucarachas",
-    description: "Eliminación total garantizada.",
+    description: "Geles y aspersores de grado profesional para tu hogar.",
     icon: Bug,
     image: "https://nmnofwinjufyyykyaelc.supabase.co/storage/v1/object/sign/Fumcon/cucaracha.jpg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9hNzRlMzZmMy0wZDFhLTQ5NWMtYWMwMS0zNjMzMDY0Y2YwZTIiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJGdW1jb24vY3VjYXJhY2hhLmpwZyIsImlhdCI6MTc2OTIwMDY5OCwiZXhwIjoxODAwNzM2Njk4fQ.vrba2_grNgq86ULycxqxYFtCOy44l4oSj8gzEt6nHbE"
   },
   {
     name: "Hormigas",
-    description: "Eliminación total garantizada.",
+    description: "Cebos granulados que eliminan el hormiguero desde la raíz.",
     icon: Bug,
     image: "https://nmnofwinjufyyykyaelc.supabase.co/storage/v1/object/sign/Fumcon/hormigas.jpg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9hNzRlMzZmMy0wZDFhLTQ5NWMtYWMwMS0zNjMzMDY0Y2YwZTIiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJGdW1jb24vaG9ybWlnYXMuanBnIiwiaWF0IjoxNzY5MjA0MzM0LCJleHAiOjE4MDA3NDAzMzR9.CKFh6VGr1id9RWg_rXxrKE9MWQSJmFX_PBTnZ69XGh8"
   },
   {
     name: "Termitas",
-    description: "Eliminación total garantizada.",
+    description: "Barreras químicas de larga duración para proteger tu estructura.",
     icon: Home,
     image: "https://nmnofwinjufyyykyaelc.supabase.co/storage/v1/object/sign/Fumcon/termitas.jpg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9hNzRlMzZmMy0wZDFhLTQ5NWMtYWMwMS0zNjMzMDY0Y2YwZTIiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJGdW1jb24vdGVybWl0YXMuanBnIiwiaWF0IjoxNzY5MjAwNzU0LCJleHAiOjE4MDA3MzY3NTR9.SvfTGup5HLIPLubYeOCyTdXBQJUZHHpvxfss5ji4PsI"
   },
   {
     name: "Mosquitos",
-    description: "Eliminación total garantizada.",
+    description: "Equipos y concentrados para control de insectos voladores.",
     icon: Wind,
     image: "https://nmnofwinjufyyykyaelc.supabase.co/storage/v1/object/sign/Fumcon/enjambre-mosquitos.avif?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9hNzRlMzZmMy0wZDFhLTQ5NWMtYWMwMS0zNjMzMDY0Y2YwZTIiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJGdW1jb24vZW5qYW1icmUtbW9zcXVpdG9zLmF2aWYiLCJpYXQiOjE3NjkyMDA3MDcsImV4cCI6MTgwMDczNjcwN30.BkZIY_o6cW31prGwh_nUfRUMh4nkg75MP7Coqv_rhKM"
   },
   {
     name: "Arañas",
-    description: "Eliminación total garantizada.",
+    description: "Protección residual para rincones y áreas de difícil acceso.",
     icon: Hexagon,
     image: "https://nmnofwinjufyyykyaelc.supabase.co/storage/v1/object/sign/Fumcon/spider.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9hNzRlMzZmMy0wZDFhLTQ5NWMtYWMwMS0zNjMzMDY0Y2YwZTIiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJGdW1jb24vc3BpZGVyLnBuZyIsImlhdCI6MTc2OTIwMDc0NCwiZXhwIjoxODAwNzM2NzQ0fQ.xqmsOdTRLHYopkmFrnlpmkYQyyK7G1A-7xJs6LNzWAI"
   },
   {
     name: "Alacranes",
-    description: "Eliminación total garantizada.",
+    description: "Polvos y líquidos específicos para control de arácnidos peligrosos.",
     icon: AlertTriangle,
     image: "https://nmnofwinjufyyykyaelc.supabase.co/storage/v1/object/sign/Fumcon/alacranes.jpg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9hNzRlMzZmMy0wZDFhLTQ5NWMtYWMwMS0zNjMzMDY0Y2YwZTIiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJGdW1jb24vYWxhY3JhbmVzLmpwZyIsImlhdCI6MTc2OTIwMDU5NywiZXhwIjoxODAwNzM2NTk3fQ.Wu62ZvypCzAq112Ik8CFfz27j7h1qMyew_bMTkEqjA8"
   },
   {
     name: "Garrapatas",
-    description: "Eliminación total garantizada.",
+    description: "Tratamientos para patios y áreas exteriores 100% seguros.",
     icon: Target,
     image: "https://nmnofwinjufyyykyaelc.supabase.co/storage/v1/object/sign/Fumcon/garrapata.jpg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9hNzRlMzZmMy0wZDFhLTQ5NWMtYWMwMS0zNjMzMDY0Y2YwZTIiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJGdW1jb24vZ2FycmFwYXRhLmpwZyIsImlhdCI6MTc2OTIwMDcxOSwiZXhwIjoxODAwNzM2NzE5fQ.q81Su61d156_Tv0725kMDQhr1RtwzYSnM_2yi0LU1GE"
   },
   {
     name: "Roedores",
-    description: "Eliminación total garantizada.",
+    description: "Estaciones de cebado y trampas mecánicas de alta eficiencia.",
     icon: Rat,
     image: "https://nmnofwinjufyyykyaelc.supabase.co/storage/v1/object/sign/Fumcon/ratas.jpg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9hNzRlMzZmMy0wZDFhLTQ5NWMtYWMwMS0zNjMzMDY0Y2YwZTIiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJGdW1jb24vcmF0YXMuanBnIiwiaWF0IjoxNzY5MjAwNzM0LCJleHAiOjE4MDA3MzY3MzR9.jhRz-KHBKwnrxWBTvywY9yg1_kR1twDGhpGmnHuY3js"
   }
@@ -225,27 +220,27 @@ export const PESTS_LIST = [
 export const METHODS: MethodItem[] = [
   {
     title: "Aspersión",
-    description: "Aplicación líquida perimetral para barreras químicas efectivas.",
+    description: "Aplicación líquida perimetral para crear barreras protectoras duraderas.",
     icon: SprayCan
   },
   {
     title: "Gel Activo",
-    description: "Cebos de alta atracción para control focalizado de cucarachas y hormigas.",
+    description: "Cebos de atracción masiva para control focalizado en áreas críticas.",
     icon: Bug
   },
   {
     title: "Nebulización",
-    description: "Microgotas que alcanzan áreas difíciles y espacios aéreos.",
-    icon: Clock // Representing efficiency/coverage
+    description: "Sistemas de ultra bajo volumen para máxima cobertura en interiores.",
+    icon: Clock 
   },
   {
     title: "Polvos Residuales",
-    description: "Tratamiento de grietas y hendiduras para protección duradera.",
+    description: "Tratamiento preventivo y correctivo para grietas y hendiduras.",
     icon: ShieldCheck
   },
   {
     title: "Termonebulización",
-    description: "Niebla térmica de alta penetración para control total en áreas de difícil acceso y techos elevados.",
+    description: "Niebla de alta penetración para control total en techos y espacios amplios.",
     icon: CloudFog
   }
 ];

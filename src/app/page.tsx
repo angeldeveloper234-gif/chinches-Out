@@ -4,10 +4,8 @@ import Services from '../components/Services';
 import Methods from '../components/Methods';
 import StoreSection from '../components/StoreSection';
 import Certifications from '../components/Certifications';
-import Promotion from '../components/Promotion';
-import Testimonials from '../components/Testimonials';
 
-import Contact from '../components/Contact';
+import Testimonials from '../components/Testimonials';
 
 export default function HomePage() {
     return (
@@ -17,10 +15,8 @@ export default function HomePage() {
             <Methods />
             <StoreSection />
             <Certifications />
-            <Promotion />
-            <Testimonials />
 
-            <Contact />
+            <Testimonials />
         </>
     );
 }

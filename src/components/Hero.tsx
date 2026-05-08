@@ -49,9 +49,9 @@ const Hero: React.FC = () => {
               transition={{ delay: 0.2 }}
               className="text-4xl md:text-6xl lg:text-8xl font-black leading-[1.1] md:leading-[0.95] tracking-tighter"
             >
-              Control de Plagas <br className="hidden lg:block" />
+              Hogar Libre <br className="hidden lg:block" />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-green to-brand-yellow drop-shadow-sm">
-                Sin Riesgos
+                de Plagas
               </span>
             </motion.h1>
             
@@ -61,8 +61,8 @@ const Hero: React.FC = () => {
               transition={{ delay: 0.4 }}
               className="text-base md:text-lg text-gray-300 max-w-xl leading-relaxed font-medium border-l-4 border-brand-green pl-6"
             >
-              Servicio de fumigación certificado y seguro para tu familia y negocio. 
-              Tecnología avanzada para un ambiente 100% libre de plagas.
+              Venta de productos profesionales de fumigación certificados y seguros para uso residencial. 
+              La mejor tecnología ahora a tu alcance para un ambiente 100% protegido.
             </motion.p>
 
             {/* Counter Section */}
@@ -81,7 +81,7 @@ const Hero: React.FC = () => {
               </div>
               <div className="text-sm">
                 <p className="font-black text-brand-yellow">+{clientCount}</p>
-                <p className="text-gray-400 text-[10px] font-bold uppercase tracking-wider">Clientes Satisfechos</p>
+                <p className="text-gray-400 text-[10px] font-bold uppercase tracking-wider">Hogares Protegidos</p>
               </div>
             </motion.div>
 
@@ -94,10 +94,10 @@ const Hero: React.FC = () => {
 
               
               <a
-                href="#servicios"
+                href="#tienda"
                 className="px-8 py-4 md:px-10 md:py-5 rounded-full font-black text-base md:text-lg text-white border-2 border-white/20 hover:bg-white/10 transition-all flex items-center gap-2"
               >
-                Nuestros Servicios
+                Ver Productos
               </a>
             </motion.div>
 

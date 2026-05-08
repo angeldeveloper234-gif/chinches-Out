@@ -14,10 +14,10 @@ const Methods: React.FC = () => {
           <span className="text-brand-green font-bold tracking-widest uppercase text-xs mb-3 block">Metodología Avanzada</span>
           <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-6">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight">
-                Ciencia Aplicada <br className="hidden md:block" /> a la Seguridad
+                Ciencia Aplicada <br className="hidden md:block" /> a la Efectividad
             </h2>
             <p className="text-gray-400 max-w-md text-lg">
-                Seleccionamos el método exacto tras una inspección rigurosa. Eficiencia máxima, riesgo cero.
+                Nuestros productos utilizan fórmulas avanzadas diseñadas bajo estándares científicos. Máxima efectividad, seguridad total para tu hogar.
             </p>
           </div>
         </div>
