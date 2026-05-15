@@ -39,6 +39,17 @@ const Footer: React.FC = () => {
 
         <div className="flex flex-col md:flex-row justify-between items-center text-xs text-gray-400 font-medium">
           <p>&copy; {new Date().getFullYear()} ChinchesOut del Sureste S.A. de C.V. Todos los derechos reservados.</p>
+          <p className="mt-4 md:mt-0">
+            Hecho por{' '}
+            <a 
+              href="https://www.angelstudio.design/" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="hover:text-brand-green transition-colors"
+            >
+              Angel Design Studio
+            </a>
+          </p>
         </div>
       </div>
     </footer>
